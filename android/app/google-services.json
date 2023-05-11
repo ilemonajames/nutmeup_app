@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "399314612807",
+    "project_id": "nutmeup-57502",
+    "storage_bucket": "nutmeup-57502.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399314612807:android:e53fb7d0c45021c1dab762",
+        "android_client_info": {
+          "package_name": "com.company.nutmeup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399314612807-muucqqa15agbu7ndjo5710f9dnf7kufi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.nutmeup",
+            "certificate_hash": "300cc23fc242bdd924ed35cf55f896b1551b0468"
+          }
+        },
+        {
+          "client_id": "399314612807-0hvj2naj9jb6rosj6v2q3tvvkm8phiga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG5uePQmWxrK8VYExwRCvXkQQZBFULPxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399314612807-0hvj2naj9jb6rosj6v2q3tvvkm8phiga.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "399314612807-5fjikt1n7jl4icn509t0ql2e8gftar3j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.nutmeup"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399314612807:android:a600ca37fb4b33f9dab762",
+        "android_client_info": {
+          "package_name": "com.example.nutmeup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399314612807-0hvj2naj9jb6rosj6v2q3tvvkm8phiga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG5uePQmWxrK8VYExwRCvXkQQZBFULPxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399314612807-0hvj2naj9jb6rosj6v2q3tvvkm8phiga.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "399314612807-5fjikt1n7jl4icn509t0ql2e8gftar3j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.nutmeup"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

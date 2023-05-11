@@ -1,0 +1,104 @@
+name: nutmeup
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  pin_code_fields: ^7.4.0
+  google_maps_flutter: ^2.1.12
+  dotted_line: ^3.1.0
+  firebase_core: 1.24.0
+  # firebase_analytics: ^9.3.3
+  firebase_auth: 3.11.2
+  cloud_firestore: ^3.1.6
+  # firebase_messaging: ^13.0.0
+  # firebase_crashlytics: ^2.8.9
+  firebase_dynamic_links: 4.3.11
+  # firebase_performance: ^0.8.2+4
+  firebase_database: 9.1.7
+  firebase_storage: 10.3.11
+
+  fluttertoast: ^8.0.9
+  crypto: ^3.0.2
+  uuid: ^3.0.6
+  shared_preferences: ^2.0.12
+  provider: ^6.0.3
+
+  video_player: ^2.4.7
+
+  syncfusion_flutter_datepicker: ^21.2.3
+  flutter_multi_formatter: ^2.7.5
+  local_auth: ^2.1.2
+  cached_network_image: ^3.2.2
+  permission_handler: ^10.0.2
+  location: ^4.4.0
+  google_place: ^0.4.7
+  google_geocoding: ^0.2.0
+  expandable: ^5.0.1
+  geoflutterfire: ^3.0.3
+  flutter_countdown_timer: ^4.1.0
+  flutter_polyline_points: ^1.0.0
+  skeletons: ^0.0.3
+
+  flutter_paystack:
+    git:
+      url: https://github.com/definitelyme/flutter_paystack.git
+      ref: a4a33c3dd0a12f46d655a2e63d11e9f20ba82d01
+
+  image_picker: ^0.8.4+6
+  image_cropper: ^3.0.0
+  google_sign_in: ^6.1.0
+  sign_in_with_apple: ^4.1.0
+  camera: ^0.10.0+4
+  flutter_rating_bar: ^4.0.1
+  http: ^0.13.5
+  dart_geohash: ^2.0.2
+  geocoding: ^2.0.5
+  url_launcher: ^6.1.7
+
+  smooth_page_indicator: ^1.0.0+2
+  flutter_typeahead: ^4.3.1
+
+dependency_overrides:
+    firebase_core_platform_interface: 4.5.1
+    
+
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/brand/
+    - assets/images/
+    - assets/tunes/    
+    - assets/images/icons/
+
+
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/NunitoSans-Bold.ttf
+        - asset: assets/fonts/NunitoSans-BoldItalic.ttf
+        - asset: assets/fonts/NunitoSans-ExtraBold.ttf
+        - asset: assets/fonts/NunitoSans-ExtraBoldItalic.ttf
+        - asset: assets/fonts/NunitoSans-Italic.ttf
+        - asset: assets/fonts/NunitoSans-Regular.ttf
+        - asset: assets/fonts/NunitoSans-SemiBold.ttf
+        - asset: assets/fonts/NunitoSans-SemiBoldItalic.ttf
+

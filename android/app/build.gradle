@@ -1,0 +1,85 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+android {
+    compileSdkVersion 33
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "com.example.onboarding_app"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+
+        // Add the following signing config:
+        signingConfigs {
+            release {
+                storeFile file("../mykeystore.jks")
+                storePassword "big123456"
+                keyAlias "mykey"
+                keyPassword "big123456"
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            // Use the new signing config:
+            signingConfig signingConfigs.release
+
+            // Add the following code to read the Google Services JSON file:
+            resValue "string", "google_services_json", file('../google-services.json').path
+            // This assumes that you have placed the JSON file in the android directory of your Flutter project.
+            // If not, adjust the file path accordingly.
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    // Add the following dependencies for Firebase and Google Play Services:
+    implementation 'com.google.firebase:firebase-core:20.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.0'
+}
+
